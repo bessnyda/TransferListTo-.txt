@@ -30,9 +30,11 @@
 
         try {
             writer = new FileWriter("TransferListTo.txt");
+                
             for (int i = 0; i < transfer.length(); i++) {
                 writer.write(transfer.charAt(i));
-            }
+            } 
+                // or writer.write(transfer); 
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
